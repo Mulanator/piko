@@ -14,7 +14,6 @@ SET time_zone = "+00:00";
 --
 -- Datenbank: `piko`
 --
-DROP DATABASE piko;
 CREATE DATABASE `piko`;
 
 -- --------------------------------------------------------
@@ -30,6 +29,7 @@ CREATE TABLE IF NOT EXISTS `log` (
 	  `id` int(11) NOT NULL AUTO_INCREMENT,
 	  `Datum` datetime NOT NULL,
 	  `Erzeugung aktuell` float NOT NULL,
+	  `Tagesenergie` float NOT NULL,
 	  `Gesamtenergie` float NOT NULL,
 	  `Status` text NOT NULL,
 	  PRIMARY KEY (`id`)
